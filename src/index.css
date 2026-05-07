@@ -1,0 +1,233 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #1a0a00;
+  color: #f5e6c8;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.app {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #e8451a;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #f0a500;
+  margin: 1.4rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.order-section {
+  background: #2a1000;
+  border: 1px solid #5a2d00;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #e8451a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.3rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+button:hover {
+  background: #c93a15;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.reset-row {
+  margin-top: 1.4rem;
+  border-top: 1px solid #5a2d00;
+  padding-top: 1rem;
+}
+
+.reset-row button {
+  background: #3a2000;
+  color: #f0a500;
+  border: 1px solid #5a2d00;
+}
+
+.reset-row button:hover {
+  background: #4a2800;
+}
+
+.stats-section {
+  margin-top: 2rem;
+  background: #2a1000;
+  border: 1px solid #5a2d00;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.stats-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.no-data {
+  color: #7a5530;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* Total orders banner */
+.grand-total-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3a1500;
+  border: 1px solid #7a3500;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.grand-total-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #c88040;
+}
+
+.grand-total-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f0a500;
+}
+
+/* Category cards grid */
+.stat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+@media (max-width: 560px) {
+  .stat-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat-card {
+  background: #1a0a00;
+  border: 1px solid #5a2d00;
+  border-radius: 8px;
+  padding: 0.9rem;
+}
+
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #3a1800;
+}
+
+.stat-card-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f0a500;
+  font-weight: 600;
+}
+
+.stat-card-total {
+  font-size: 0.75rem;
+  color: #7a5530;
+}
+
+/* Stats table inside cards */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.28rem 0.3rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.td-label {
+  color: #f5e6c8;
+}
+
+.td-count {
+  text-align: right;
+  color: #f0a500;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  white-space: nowrap;
+  padding-right: 0.5rem;
+}
+
+.td-pct {
+  text-align: right;
+  color: #7a5530;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  min-width: 2.8rem;
+}
+
+/* Highlighted row (most popular option) */
+.highlight-row .td-label {
+  color: #f5e6c8;
+  font-weight: 600;
+}
+
+.highlight-row .td-count {
+  color: #f0a500;
+}
+
+.highlight-row .td-pct {
+  color: #c88040;
+}
+
+/* Most popular footer */
+.most-popular {
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #3a1800;
+  font-size: 0.75rem;
+  color: #7a5530;
+}
+
+.most-popular span {
+  color: #e8451a;
+  font-weight: 600;
+}
