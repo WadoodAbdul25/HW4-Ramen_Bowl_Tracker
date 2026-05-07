@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://wadoodabdul.github.io/HW4",
+  "homepage": "https://wadoodabdul25.github.io/HW4-Ramen_Bowl_Tracker",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

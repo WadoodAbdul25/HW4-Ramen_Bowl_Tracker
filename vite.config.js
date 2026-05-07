@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/HW4/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/HW4-Ramen_Bowl_Tracker/' : '/',
 })
